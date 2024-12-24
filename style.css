@@ -195,19 +195,28 @@ nav {
   }
 }
 .page2bottom{
-  height: 60vh;
+  min-height: 60vh;
   width: 100%;
   background-color: #8a8a89;
-  padding: 4vw;
+  padding:2vw 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .page2bottom h1{
   font-size: 4vw;
-  width: 55%;
+  width: 56%;
   line-height: 3.8vw;
 }
 .bottomPart2{
-  width: 30%;
+  width: 20%;
+}
+.bottomPart2 img{
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 17vw;
+}
+.bottomPart2 p{
+  font-weight: 100;
+  margin-top: 2.5vw;
 }
