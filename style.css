@@ -114,7 +114,7 @@ nav {
   width: 30vw;
   border-radius: 50%;
   position: absolute;
-  background: linear-gradient(#fe330a,#fe3b0aec);
+  background: linear-gradient(#fe330a, #fe3b0aec);
   filter: blur(25px);
   animation-name: anime2;
   animation-timing-function: linear;
@@ -127,7 +127,7 @@ nav {
   width: 30vw;
   border-radius: 50%;
   position: absolute;
-  background: linear-gradient(#fe330a,#fe3b0aec);
+  background: linear-gradient(#fe330a, #fe3b0aec);
   filter: blur(25px);
   animation-name: anime3;
   animation-timing-function: linear;
@@ -136,18 +136,78 @@ nav {
   animation-direction: alternate;
 }
 @keyframes anime3 {
-  from{
-    transform: translate(55% ,-7%);
+  from {
+    transform: translate(55%, -7%);
   }
-  to{
-    transform: translate(0%,10%);
+  to {
+    transform: translate(0%, 10%);
   }
 }
 @keyframes anime2 {
-  from{
-    transform: translate(5% ,-5%);
+  from {
+    transform: translate(5%, -5%);
   }
-  to{
-    transform: translate(-20%,30%);
+  to {
+    transform: translate(-20%, 30%);
   }
+}
+.page2 {
+  min-height: 100vh;
+  background-color: #EFEAE3;
+  width: 100%;
+  padding: 8vw 0vw;
+}
+.movingText {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.movingText::-webkit-scrollbar {
+  display: none;
+}
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: marquee;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  transition: all ease 5s;
+}
+.movingText h1 {
+  font-size: 9vw;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.circle {
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  background-color: #fe330a;
+  display: inline-block;
+  margin: 0.5vw 1.2vw;
+}
+@keyframes marquee {
+  form {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.page2bottom{
+  height: 60vh;
+  width: 100%;
+  background-color: #8a8a89;
+  padding: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page2bottom h1{
+  font-size: 4vw;
+  width: 55%;
+  line-height: 3.8vw;
+}
+.bottomPart2{
+  width: 30%;
 }
